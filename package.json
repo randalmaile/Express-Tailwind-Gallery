@@ -1,0 +1,31 @@
+{
+  "name": "express-tailwind-gallery",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "build:css": "postcss src/stylesheets/tailwind.css -o public/stylesheets/styles.css",
+    "devstart": "npm run build:css && nodemon -e ejs,css,js  ./bin/www",
+    "serverstart": "DEBUG=express=tailwind-gallery:* npm run devstart"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-ejs-layouts": "^2.5.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.13",
+    "postcss": "^8.3.8",
+    "postcss-cli": "^9.0.1",
+    "postcss-custom-properties": "^12.0.0",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.16"
+  }
+}

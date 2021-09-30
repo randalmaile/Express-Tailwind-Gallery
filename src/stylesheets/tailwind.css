@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* Design tokens */
+@import "./tokens.css";
+
+details[open] > summary > span > .details-closed {
+  @apply hidden;
+}
+
+details[open] > summary > span > .details-open {
+  @apply inline;
+}
+
+input[type="checkbox"]:focus-visible {
+  outline: 1px solid #45a57c;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 rgb(255, 255, 255);
+}
+
+input:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+.select-single-value {
+  max-width: calc(100% - 8px);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Perfect for reusable components */
+.card {
+  @apply relative overflow-hidden bg-white rounded-md shadow-md;
+}
+
+.badge {
+  @apply absolute top-0 left-0 p-2 mt-2 ml-2 text-xs font-bold text-gray-400 uppercase bg-gray-100 rounded-full;
+}
+
+.btn {
+  @apply px-3 py-2 text-xs font-bold tracking-wider uppercase rounded-full cursor-pointer;
+}
+
+@layer base {
+  [type="radio"]:focus.form-radio {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='black' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+    background-color: white;
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(209, 213, 219);
+  }
+  [type="radio"]:checked.form-radio {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='black' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+    background-color: white;
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(209, 213, 219);
+  }
+  [type="radio"]:focus-visible.form-radio {
+    box-shadow: 0 0 0 2px rgb(56, 151, 168);
+  }
+}

@@ -1,0 +1,104 @@
+<div>
+  <%- include('./partials/login-heading'); %>
+  <h4 class="pb-2 mt-12 font-bold border-b border-gray-200">Latest Recipes</h4>
+
+  <div class="grid gap-10 mt-8 md:grid-cols-3">
+    <!-- cards go here -->
+    <div class="cursor-pointer card hover:shadow-lg">
+      <img
+        src="images/stew.jpg"
+        alt="stew"
+        class="object-cover w-full h-32 sm:h-48"
+      />
+      <div class="m-4">
+        <header class="font-bold">5 Bean Chili Stew</header>
+        <span class="text-sm text-gray-500">Recipe by Mario</span>
+      </div>
+      <div class="flex items-center badge">
+        <svg
+          class="w-5 mr-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <span class="">25 mins</span>
+      </div>
+    </div>
+
+    <div class="cursor-pointer card hover:shadow-xl">
+      <img
+        src="images/noodles.jpg"
+        alt="noodles"
+        class="object-cover w-full h-32 sm:h-48"
+      />
+      <div class="m-4">
+        <header class="font-bold">Veg Noodles</header>
+        <span class="text-sm text-gray-500">Recipe by Mario</span>
+      </div>
+      <div class="flex items-center badge">
+        <svg
+          class="w-5 mr-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <span class="">25 mins</span>
+      </div>
+    </div>
+
+    <div class="cursor-pointer card hover:shadow-lg">
+      <img
+        src="images/curry.jpg"
+        alt="curry"
+        class="object-cover w-full h-32 sm:h-48"
+      />
+      <div class="m-4">
+        <header class="font-bold">Tofu Curry</header>
+        <span class="text-sm text-gray-500">Recipe by Mario</span>
+      </div>
+      <div class="flex items-center badge">
+        <svg
+          class="w-5 mr-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <span class="">25 mins</span>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="pb-2 mt-12 font-bold border-b border-gray-200">Most Popular</h4>
+</div>
+
+<div class="flex justify-center mt-12">
+  <div
+    class=" btn bg-secondary-100 text-secondary-200 hover:bg-primary hover:text-secondary hover:shadow-inner"
+  >
+    Load more
+  </div>
+</div>
